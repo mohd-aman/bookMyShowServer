@@ -13,6 +13,7 @@ const bookingRoute = require('./routes/bookingRoute');
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('./public'));
 app.use('/api/users',userRoute);
 app.use('/api/movies',movieRoute);
 app.use('/api/theatres',theatreRoute);
